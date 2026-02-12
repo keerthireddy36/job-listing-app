@@ -1,16 +1,70 @@
-# React + Vite
+# Job Listing App – Cygnus Assignment
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview
+This project is a simple **Job Board UI** built using **React + Vite**.  
+It allows users to browse, search, and filter job listings efficiently.  
+The application uses mock data (static JSON) and runs fully on the frontend.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
+- Display job cards (title, company, location, type)
+- Search jobs by title (real-time)
+- Filter by location (Remote / On-site)
+- Filter by job type (Internship / Full-time)
+- Alphabetical sorting (Bonus)
+- Highlight searched keyword (Bonus)
+- Responsive design (mobile-friendly)
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Tech Stack
+- React (Hooks for state management)
+- Vite (Fast development build tool)
+- JavaScript (ES6)
+- CSS3 (Responsive layout)
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Project Structure
+src/
+├── components/
+│ ├── JobCard.jsx
+│ └── Filters.jsx
+├── data/
+│ └── jobs.js
+├── App.jsx
+├── main.jsx
+└── App.css
+
+---
+
+## Installation & Setup
+
+### 1. Clone repository
+```bash
+git clone https://github.com/keerthireddy36/job-listing-app.git
+cd job-listing-app
+2. Install dependencies
+ npm install
+3. Run locally
+npm run dev
+Open browser → http://localhost:5173
+
+Deployment
+
+The app can be deployed using Vercel or Netlify.
+
+Improvements (Future Work)
+
+Connect to real job API
+
+Add pagination
+
+Add dark mode
+
+Add loading skeleton
+
+Better UI with Tailwind
+
+Save filters in local storage
